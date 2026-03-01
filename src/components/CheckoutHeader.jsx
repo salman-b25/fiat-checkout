@@ -1,4 +1,4 @@
-import backIcon from "../assets/back-icon.svg";
+import backIcon from "../assets/back-Icon.svg";
 
 export default function CheckoutHeader() {
     return (
