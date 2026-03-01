@@ -1,0 +1,13 @@
+.error-text {
+    color: #ef4444;
+    /* Red color for errors */
+    font-size: 11px;
+    margin-top: 4px;
+    display: block;
+    font-weight: 500;
+}
+
+/* Optional: Highlight the input border red on error */
+.form-group input.error-border {
+    border-color: #ef4444;
+}

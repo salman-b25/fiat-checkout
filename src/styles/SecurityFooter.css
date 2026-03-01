@@ -1,0 +1,104 @@
+.security-info {
+    display: flex;
+    align-items: center;
+    /* Vertically aligns lock with text */
+    justify-content: center;
+    /* Centers the whole unit horizontally */
+    gap: 4px;
+    /* Precise space between icon and text */
+    margin: 8px 0 16px;
+    /* Spacing above and below the section */
+}
+
+.lock-icon {
+    width: 9.33px;
+    /* Small size as seen in Figma */
+    height: auto;
+    /* If your icon isn't green, you can sometimes tint SVGs with: */
+    /* filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%); */
+}
+
+.security-text {
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: -0.3px;
+    color: #64748B;
+    /* Muted blue-grey */
+    letter-spacing: 0.5px;
+    /* Subtle spacing for uppercase text */
+    margin: 0;
+    /* Remove default paragraph margins */
+}
+
+.other-methods {
+    text-align: center;
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #2563eb;
+    cursor: pointer;
+}
+
+.terms-text {
+    /* Exact width from your request */
+    width: 281.64px;
+
+    /* Center the 281px box within the 358px parent */
+    margin: 0px auto 24px;
+
+    /* Typography to match the small, clean look */
+    font-size: 10px;
+    line-height: 15px;
+    color: #94A3B8;
+    text-align: center;
+
+    /* Prevent any padding from pushing the width past 281.64px */
+    box-sizing: border-box;
+}
+
+.bottom-cta-container {
+    width: 390px;
+    height: 105px;
+    background: #FFFFFF;
+    border-top: 1px solid #E2E8F0;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 16px;
+    box-sizing: border-box;
+    /* Keeps the fixed container centered */
+
+
+
+
+    /* Ensure it doesn't have extra margins */
+
+}
+
+.pay-button {
+    width: 358px;
+    height: 56px;
+    background-position: center;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s ease;
+    line-height: 28px;
+    letter-spacing: 0px;
+
+
+}
+
+.pay-button:hover {
+    background: #1e4ed8;
+}

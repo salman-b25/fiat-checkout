@@ -1,0 +1,106 @@
+/* Success Screen Container */
+.success-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 24px;
+    background: #FFFFFF;
+    height: 100%;
+    /* Fills the 819px checkout-page container */
+    box-sizing: border-box;
+}
+
+/* Checkmark Circle */
+.success-icon-circle {
+    width: 80px;
+    height: 80px;
+    background-color: #22C55E;
+    /* Success Green */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 12px rgba(34, 197, 94, 0.2);
+}
+
+.success-icon-circle span {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* Text Styling */
+.success-container h2 {
+    font-size: 24px;
+    color: #0F172A;
+    margin-bottom: 12px;
+}
+
+.success-container p {
+    font-size: 16px;
+    color: #64748B;
+    line-height: 1.5;
+    margin-bottom: 32px;
+}
+
+/* Button override for Success Screen */
+.success-container .pay-button {
+    max-width: 320px;
+    background: #2563EB;
+}
+
+/* Animation Keyframes */
+@keyframes slideUpFade {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Success Card Animation */
+.success-container {
+    animation: slideUpFade 0.6s ease-out forwards;
+}
+
+/* Delaying the checkmark and text for a staggered effect */
+.success-icon-circle {
+    animation: slideUpFade 0.6s ease-out 0.2s both;
+}
+
+.success-container h2,
+.success-container p {
+    animation: slideUpFade 0.6s ease-out 0.4s both;
+}
+
+.order-info-box {
+    background: #F8FAFC;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 32px;
+    width: 100%;
+    max-width: 300px;
+    text-align: left;
+    animation: slideUpFade 0.6s ease-out 0.5s both;
+    /* Staggered animation */
+}
+
+.order-info-box p {
+    font-size: 13px;
+    color: #475569;
+    margin: 4px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-info-box strong {
+    color: #0F172A;
+}

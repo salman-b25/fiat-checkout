@@ -1,0 +1,55 @@
+.checkout-header {
+    height: 65px;
+    width: 390px;
+    padding: 0 16px;
+    /* Simplified padding for horizontal edges */
+    border-bottom: 1px solid #E2E8F0;
+    background: #F6F6F8CC;
+
+    display: flex;
+    align-items: center;
+    /* Vertical centering for flex children */
+    position: relative;
+    /* Required for the h2 to anchor to this container */
+    box-sizing: border-box;
+}
+
+.checkout-header h2 {
+    /* Magic for horizontal centering */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    /* Reset margins and set typography */
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.45px;
+    color: #0F172A;
+    white-space: nowrap;
+    /* Prevents text from wrapping */
+}
+
+.back-button {
+    background: none;
+    border: none;
+    display: flex;
+    /* Use flex to center the icon inside the button */
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 10;
+    /* Keeps button clickable over the centered h2 */
+}
+
+.back-button img {
+    width: 11.77px;
+    height: 20px;
+}
+
+.header-placeholder {
+    width: 24px;
+}
